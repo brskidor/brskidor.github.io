@@ -4,6 +4,17 @@
 		<title>Hello World!</title>
 	</head>
 	<body>
-		Hello World!
+		<input type="button" id="test" value="PUSH!">
+		<div id="hello"></div>
+
+		<script>
+			var btn = document.getElementById("test");
+			btn.onclick = function(){
+				var div = document.getElementById("hello");
+				var hello = document.createElement("p");
+				hello.textContent = "Hello World!";
+				div.appendChild(hello);
+			}
+		</script>
 	</body>
 </html>
